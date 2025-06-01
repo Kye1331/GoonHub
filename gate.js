@@ -19,6 +19,6 @@ document.getElementById("submitBtn").addEventListener("click", function () {
 // Set the code variable to whatever the user inputted into the input box
 if(checkCode(code) ){
     alert('welcome to goonhub')
-    window.location.replace('https://nahug4.github.io/GoonHub/niglet.html');
+    //window.location.replace('https://nahug4.github.io/GoonHub/niglet.html');
 }
 });
