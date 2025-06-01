@@ -1,6 +1,6 @@
 
 async function checkCode(attempt){
-
+//test
 let result = await fetch('https://goonhub-passcode.vercel.app/?password=' + attempt);
 let e = await result.json()
 
