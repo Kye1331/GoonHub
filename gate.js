@@ -15,12 +15,16 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   const errorMsg = document.getElementById("error");
 
  let code = userInput;
-
+run(code);
 // Set the code variable to whatever the user inputted into the input box
-if(checkCode(code)){
+
+});
+async function run(code){
+if(await checkCode(code)){
     console.log(checkCode(code));
 
     alert('welcome to goonhub')
     window.location.replace('https://nahug4.github.io/GoonHub/niglet.html');
 }
-});
+}
+run();
