@@ -5,6 +5,7 @@ let result = await fetch('https://goonhub-passcode.vercel.app/?password=' + atte
 let e = await result.text()
 if (e == "Access Granted"){
     return true
+    alert(e);
 } else{
     return false
 }
