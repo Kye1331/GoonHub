@@ -1,4 +1,6 @@
-
+if (localStorage.getItem('hasAccess') == 'true'){
+    window.location.href = 'niglet.html'
+}
 async function checkCode(attempt){
 let result = await fetch('https://goonhub-passcode.vercel.app/?password=' + attempt);
 let e = await result.json()
