@@ -1,4 +1,5 @@
 // Wait for the DOM to load before attaching event listeners
+   alert('non-gooner Detected!')
 
 document.addEventListener("DOMContentLoaded", function () {
   const calebButton = document.getElementById("caleb");
