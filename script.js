@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
  const armanButton = document.getElementById("arman");
  
  if(!localStorage.getItem('hasAccess')){
+   alert('non-gooner Detected!')
  window.location.href='index.html'
 }
   calebButton.addEventListener("click", function () {
