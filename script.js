@@ -1,4 +1,7 @@
 // Wait for the DOM to load before attaching event listeners
+if(!localStorage.getItem('hasAccess')){
+ window.location.href='index.html'
+}
 document.addEventListener("DOMContentLoaded", function () {
   const calebButton = document.getElementById("caleb");
   const kyeButton = document.getElementById("kye");
