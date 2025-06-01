@@ -3,8 +3,9 @@ async function checkCode(attempt){
 
 let result = await fetch('https://goonhub-passcode.vercel.app/?password=' + attempt);
 let e = await result.text()
+ alert(e);
+
 if (e == "Access Granted"){
-        alert(e);
     return true
 } else{
     return false
