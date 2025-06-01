@@ -14,7 +14,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   const userInput = document.getElementById("codeInput").value;
   const errorMsg = document.getElementById("error");
 
- code = userInput;
+ let code = userInput;
 
 // Set the code variable to whatever the user inputted into the input box
 if(checkCode(code) ){
