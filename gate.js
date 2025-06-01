@@ -22,9 +22,11 @@ run(code);
 async function run(code){
 if(await checkCode(code)){
     console.log(await checkCode(code));
-
-    alert('welcome to goonrrhub')
-    window.location.href='https://nahug4.github.io/GoonHub/niglet.html';
+    localStorage.setItem('hasAccess','true')
+    window.location.href='niglet.html';
+} else{
+    alert('Please enter the correct code you non-gooner');
+    localStorage.setItem('hasAccess','false')
 }
 }
 run();
