@@ -29,4 +29,4 @@ if(await checkCode(code)){
     localStorage.setItem('hasAccess','false')
 }
 }
-run();
+
