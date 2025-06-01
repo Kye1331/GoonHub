@@ -1,5 +1,4 @@
 // Wait for the DOM to load before attaching event listeners
-   alert('non-gooner Detected!')
 
 document.addEventListener("DOMContentLoaded", function () {
   const calebButton = document.getElementById("caleb");
@@ -7,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const aaravButton = document.getElementById("aarav");
  const armanButton = document.getElementById("arman");
  
- if(!localStorage.getItem('hasAccess')){
-   alert('non-gooner Detected!')
+ if(localStorage.getItem('hasAccess') == 'false'){
+
  window.location.href='index.html'
 }
   calebButton.addEventListener("click", function () {
