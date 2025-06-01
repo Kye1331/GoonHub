@@ -23,7 +23,7 @@ async function run(code){
 if(await checkCode(code)){
     console.log(await checkCode(code));
 
-    alert('welcome to goonhub')
+    alert('welcome to goonrhub')
     window.location.href='https://nahug4.github.io/GoonHub/niglet.html';
 }
 }
