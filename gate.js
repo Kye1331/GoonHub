@@ -21,10 +21,10 @@ run(code);
 });
 async function run(code){
 if(await checkCode(code)){
-    console.log(checkCode(code));
+    console.log(await checkCode(code));
 
     alert('welcome to goonhub')
-    window.location.replace('https://nahug4.github.io/GoonHub/niglet.html');
+    window.location.href='https://nahug4.github.io/GoonHub/niglet.html';
 }
 }
 run();
