@@ -4,7 +4,6 @@ async function checkCode(attempt){
 let result = await fetch('https://goonhub-passcode.vercel.app/?password=' + attempt);
 let e = await result.text()
  alert('code: '+e);
-return e;
 if (e == "Access Granted"){
     return true
 } else{
@@ -19,8 +18,9 @@ document.getElementById("submitBtn").addEventListener("click", function () {
  let code = userInput;
 
 // Set the code variable to whatever the user inputted into the input box
- alert(checkCode(code));
-if(checkCode(code) == '3'){
+if(checkCode(code) === '3'){
+    console.log(checkCode(code));
+
     alert('welcome to goonhub')
     //window.location.replace('https://nahug4.github.io/GoonHub/niglet.html');
 }
