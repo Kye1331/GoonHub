@@ -5,11 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const kyeButton = document.getElementById("kye");
   const aaravButton = document.getElementById("aarav");
  const armanButton = document.getElementById("arman");
- 
+
+  try{
  if(localStorage.getItem('hasAccess') == 'false'){
 
  window.location.href='index.html'
+   
 }
+  } catch{
+ window.location.href='index.html'
+
+  }
   calebButton.addEventListener("click", function () {
     window.location.href = "caleb.html";
   });
