@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aaravButton = document.getElementById("aarav");
  const armanButton = document.getElementById("arman");
 
-alert()localStorage.getItem('hasAccess');
+alert(localStorage.getItem('hasAccess'));
    if(localStorage.getItem('hasAccess') != 'true'){
     
      window.location.href='index.html'
