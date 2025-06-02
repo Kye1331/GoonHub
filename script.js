@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
  const armanButton = document.getElementById("arman");
 
   try{
- if(localStorage.getItem('hasAccess') == 'false'){
+   if(localStorage.getItem('hasAccess') == 'false'){
 
- window.location.href='index.html'
+     window.location.href='index.html'
    
-}
-  } catch{
+        }
+  } catch (err){
  window.location.href='index.html'
 
   }
