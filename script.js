@@ -6,16 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const aaravButton = document.getElementById("aarav");
  const armanButton = document.getElementById("arman");
 
-  try{
-   if(localStorage.getItem('hasAccess') == 'false'){
+
+   if(localStorage.getItem('hasAccess') != 'true'){
 
      window.location.href='index.html'
-   
-        }
-  } catch (err){
- window.location.href='index.html'
-
-  }
+   }
+  
   calebButton.addEventListener("click", function () {
     window.location.href = "caleb.html";
   });
